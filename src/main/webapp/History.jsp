@@ -24,7 +24,7 @@
         %>
         <tr>
             <td><%out.println(result.getKeyword());%></td>
-            <td><a href = "<%out.println(result.getLink());%>"><%out.println(result.getLink());%></a></td>
+            <td><a href = "<%out.println(result.getLink());%>" target = "_blank"><%out.println(result.getLink());%></a></td>
         </tr>
         <%
             }
