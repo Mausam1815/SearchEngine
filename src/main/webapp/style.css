@@ -1,0 +1,66 @@
+/* Button Styles */
+button {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Added box shadow */
+}
+
+button:hover {
+    background-color: #005fa3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+/* Text Input Styles */
+input[type="text"] {
+    width: 30%;
+    border: 2px solid #333;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow and border-color transitions */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus {
+    border-color: #0074cc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Body Styles */
+body {
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background for the whole page */
+}
+
+/* Result Table Styles */
+.resultTable {
+    display: inline-block;
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 60%; /* Added a width to the table for better presentation */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultTable th,
+.resultTable td {
+    padding: 12px 20px; /* Increased padding for better readability */
+    border: 1px solid #ccc;
+}
+
+.resultTable th {
+    background-color: #f2f2f2;
+}
+
+.resultTable tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* Hover effect for table rows */
+.resultTable tr:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+}

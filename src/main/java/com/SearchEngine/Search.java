@@ -16,9 +16,9 @@ import java.util.ArrayList;
 @WebServlet("/Search")
 public class Search extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        // Getting keyword from frontend
+//        Get the search keyword from the request parameters.
         String keyword = request.getParameter("keyword");
-        // Setting up connection to database
+//        Initialize a database connection.
         Connection connection = null;
         try {
             connection = DatabaseConnection.getConnection();
@@ -26,27 +26,29 @@ public class Search extends HttpServlet {
             throw new RuntimeException(e);
         }
         try {
-            // Store the query of the user
+//            Insert the search keyword and URL into the 'history' table.
             PreparedStatement preparedStatement = connection.prepareStatement("Insert into history values(?, ?);");
             preparedStatement.setString(1, keyword);
             preparedStatement.setString(2, "http://localhost:8080/SearchEngine/Search?keyword=" + keyword);
             preparedStatement.executeUpdate();
-            // Getting results after running the ranking query
+//            Execute a SQL query to search for pages containing the keyword.
             ResultSet resultSet = connection.createStatement().executeQuery("select pageTitle, pageLink, (length(lower(pageText))-length(replace(lower(pageText), '"+ keyword.toLowerCase() +"', ''))) / length('"+ keyword.toLowerCase() +"') as countoccurence from pages order by countoccurence desc limit 30;");
             ArrayList<SearchResult> results = new ArrayList<>();
-            // Transferring values from resultSet to results arraylist
+//            Process the search results.
             while(resultSet.next()) {
                 SearchResult searchResult = new SearchResult();
                 searchResult.setTitle(resultSet.getString("pageTitle"));
                 searchResult.setLink(resultSet.getString("pageLink"));
                 results.add(searchResult);
             }
-            // Displaying results in console
+//            Display the search results in the console (for debugging).
             for(SearchResult result : results) {
                 System.out.println(result.getTitle()+"\n"+result.getLink()+" \n");
             }
+//            Set the search results as an attribute and forward the request to the 'Search.jsp' page.
             request.setAttribute("results", results);
             request.getRequestDispatcher("Search.jsp").forward(request, response);
+//            Set the content type for the response.
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
         } catch (SQLException | ServletException sqlException) {
