@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 2. Enter a keyword in the search bar and click the `Search` button.
 3. View the search results.
 4. Click on the links to visit the corresponding web pages.
-5. Access the search history at `http://localhost:8080/SearchEngine/History`.
+5. Access the search history, click on `History` button.
 
 ## Features
 - Keyword-based search functionality.
