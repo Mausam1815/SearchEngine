@@ -1,6 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 2.0;
+    scroll-behavior: smooth;
+}
 /* Button Styles */
 button {
-    background-color: #0074cc;
+    background-color: DodgerBlue;
     color: white;
     border: none;
     border-radius: 4px;
@@ -19,7 +26,7 @@ button:hover {
 /* Text Input Styles */
 input[type="text"] {
     width: 30%;
-    border: 2px solid #333;
+    border: 2px solid DarkSlateGray;
     border-radius: 4px;
     padding: 10px 20px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow and border-color transitions */
@@ -27,40 +34,48 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border-color: #0074cc;
+    border-color: DodgerBlue;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Body Styles */
 body {
     text-align: center;
-    background-color: #f0f0f0; /* Light gray background for the whole page */
+    background-color: LightGray;
+    background-image: url("https://r4.wallpaperflare.com/wallpaper/654/555/787/geometry-cyberspace-digital-art-lines-wallpaper-f950de2a3cc2c6dae09fa5853997ea4b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Result Table Styles */
 .resultTable {
     display: inline-block;
+    justify-content: center;
+    margin-top: 70px;
     border-collapse: collapse;
-    margin-top: 20px;
-    width: 60%; /* Added a width to the table for better presentation */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .resultTable th,
 .resultTable td {
     padding: 12px 20px; /* Increased padding for better readability */
-    border: 1px solid #ccc;
+    border: 1px solid LightGray;
 }
 
 .resultTable th {
-    background-color: #f2f2f2;
+    background-color: DarkGray;
 }
 
 .resultTable tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: LightGray; /* Light gray for even rows */
+}
+
+.resultTable tr:nth-child(odd) {
+    background-color: White; /* White background for odd rows */
 }
 
 /* Hover effect for table rows */
 .resultTable tr:hover {
-    background-color: #e0e0e0; /* Light gray on hover */
+    background-color: LightBlue; /* Light gray on hover */
 }

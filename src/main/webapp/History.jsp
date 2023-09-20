@@ -1,4 +1,4 @@
-<%@page import = "java.util.ArrayList"%>
+<%@page import = "java.util.*"%>
 <%@page import = "com.SearchEngine.HistoryResult"%>
 <html>
 <head>
@@ -20,6 +20,7 @@
         </tr>
         <%
             ArrayList<HistoryResult> results = (ArrayList<HistoryResult>) request.getAttribute("results");
+             Collections.reverse(results);
             for(HistoryResult result : results) {
         %>
         <tr>
