@@ -36,11 +36,10 @@ Before you begin, ensure you have met the following requirements:
 Contirbutions are welcome!
 
 ## Here are some ScreenShots..
-![Screenshot 2023-09-20 151655](https://github.com/Mausam1815/SearchEngine/assets/128462297/8f3fe01e-634f-4fbf-98ab-3b175da8751b)
+![Screenshot 2023-09-20 151655](https://github.com/Mausam1815/SearchEngine/assets/128462297/96a72cd4-ab2b-488a-8bad-19024c3c4102)
 
-![Screenshot 2023-09-20 151715](https://github.com/Mausam1815/SearchEngine/assets/128462297/aa98fd1d-d8f9-467b-894d-fc2ee16725a9)
+![Screenshot 2023-09-20 151715](https://github.com/Mausam1815/SearchEngine/assets/128462297/f7338a22-c782-4387-97ef-7025f9c8fac6)
 
-![Screenshot 2023-09-20 151744](https://github.com/Mausam1815/SearchEngine/assets/128462297/9af47573-d0b9-47af-b253-314f577c32f4)
+![Screenshot 2023-09-20 151744](https://github.com/Mausam1815/SearchEngine/assets/128462297/884ed014-ee09-442b-9aea-4c23181e87b4)
 
-![Screenshot 2023-09-20 151758](https://github.com/Mausam1815/SearchEngine/assets/128462297/f4ec9206-2e0e-4100-b6fb-2b6dc7e89118)
-
+![Screenshot 2023-09-20 151758](https://github.com/Mausam1815/SearchEngine/assets/128462297/cb634f87-545a-46f4-977d-3dcef0c632c7)
