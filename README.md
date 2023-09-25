@@ -1,5 +1,19 @@
 # SearchEngine
-This is a simple search engine project implemented using `Java`, `Apache Tomcat`, and `Maven libraries`. The project allows users to search for keywords, retrieve relevant results from a database, and view search history.
+The Simple Search Engine project provides a basic web search functionality along with a history tracking feature. Users can:
+
+- Perform keyword searches on a database of web pages.
+- View search results, including titles and links.
+- Access their search history.
+
+## Technologies Used
+
+- Java
+- JSP (JavaServer Pages)
+- MySQL
+- CSS
+- Maven
+- Servlet API
+- JDBC
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
@@ -8,6 +22,21 @@ Before you begin, ensure you have met the following requirements:
 - Maven build tool.
 - MySQL databse.
 - IDE (Eclipse, IntelliJ, etc.).
+
+## Project Components
+
+The project consists of several components:
+
+1. **index.jsp**: The homepage with a search input field and a "History" button.
+2. **search.jsp**: Displays search results and connects to the database.
+3. **history.jsp**: Displays the search history retrieved from the database.
+4. **style.css**: Provides styling for the web pages.
+5. **search.java**: Java servlet for handling user searches.
+6. **history.java**: Java servlet for managing search history.
+7. **SearchResult.java**: Java class representing search results.
+8. **HistoryResult.java**: Java class representing search history entries.
+9. **DatabaseConnection.java**: Java class for establishing a MySQL database connection.
+10. **pom.xml**: Maven configuration file.
 
 ## Setup
 
@@ -33,7 +62,7 @@ Before you begin, ensure you have met the following requirements:
 - Responsive web design.
 
 ## Contributing
-Contirbutions are welcome!
+Contirbutions are welcome! If you have any suggestions or would like to contribute to this project, please open an issue or create a pull request.
 
 ## Here are some ScreenShots..
 ![Screenshot 2023-09-20 151655](https://github.com/Mausam1815/SearchEngine/assets/128462297/96a72cd4-ab2b-488a-8bad-19024c3c4102)
