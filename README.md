@@ -1,5 +1,5 @@
 # SearchEngine
-The Simple Search Engine project provides a basic web search functionality along with a history tracking feature. Users can:
+The Simple `Search Engine` project provides a basic web search functionality along with a history tracking feature. Users can:
 
 - Perform keyword searches on a database of web pages.
 - View search results, including titles and links.
@@ -7,13 +7,13 @@ The Simple Search Engine project provides a basic web search functionality along
 
 ## Technologies Used
 
-- Java
-- JSP (JavaServer Pages)
-- MySQL
-- CSS
-- Maven
-- Servlet API
-- JDBC
+- `Java`
+- `JSP` (JavaServer Pages)
+- `MySQL`
+- `CSS`
+- `Maven`
+- `Servlet API`
+- `JDBC`
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
@@ -27,16 +27,16 @@ Before you begin, ensure you have met the following requirements:
 
 The project consists of several components:
 
-1. **index.jsp**: The homepage with a search input field and a "History" button.
-2. **search.jsp**: Displays search results and connects to the database.
-3. **history.jsp**: Displays the search history retrieved from the database.
-4. **style.css**: Provides styling for the web pages.
-5. **search.java**: Java servlet for handling user searches.
-6. **history.java**: Java servlet for managing search history.
-7. **SearchResult.java**: Java class representing search results.
-8. **HistoryResult.java**: Java class representing search history entries.
-9. **DatabaseConnection.java**: Java class for establishing a MySQL database connection.
-10. **pom.xml**: Maven configuration file.
+1. `**index.jsp**` : The homepage with a search input field and a "History" button.
+2. `**search.jsp**` : Displays search results and connects to the database.
+3. `**history.jsp**` : Displays the search history retrieved from the database.
+4. `**style.css**` : Provides styling for the web pages.
+5. `**search.java**` : Java servlet for handling user searches.
+6. `**history.java**` : Java servlet for managing search history.
+7. `**SearchResult.java**` : Java class representing search results.
+8. `**HistoryResult.java**` : Java class representing search history entries.
+9. `**DatabaseConnection.java**` : Java class for establishing a MySQL database connection.
+10. `**pom.xml**` : Maven configuration file.
 
 ## Setup
 
