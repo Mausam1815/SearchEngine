@@ -48,7 +48,7 @@ The project consists of several components:
 6. Deploy the project on your `Apache Tomcat server`.
 
 ## Usage
-1. Access the search engine web application ar `http://localhost:8080/SearchEngine`.
+1. Access the search engine web application at `http://localhost:8080/SearchEngine`.
 2. Enter a keyword in the search bar and click the `Search` button.
 3. View the search results.
 4. Click on the links to visit the corresponding web pages.
